@@ -1,18 +1,82 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8"> <!-- Set encoding UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive di HP -->
+    <title>Animated Login Form || mmmhpd_s</title> <!-- Judul halaman -->
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- CSS utama -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+     <!-- ============================= -->
+     <!-- CONTAINER UTAMA               -->
+     <!-- ============================= -->
+     <div class="container">
+         <!-- Lingkaran animasi (background dekoratif) -->
+         <div class="circle-container" id="circleContainer"></div>
+         
+         <!-- Kotak login utama -->
+         <div class="login-box">
+              <!-- Judul form login -->
+              <h2>Login</h2>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+              <!-- Form login -->
+              <form action="" id="LoginForm">
+                  
+                  <!-- Input Email -->
+                  <div class="input-group">
+                    <input type="email" placeholder="Email" required>
+                    <!-- Ikon email -->
+                    <span class="input-icon">
+                      <i class="fa-solid fa-envelope"></i>
+                    </span>
+                  </div>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+                  <!-- Input Password -->
+                  <div class="input-group">
+                    <input type="password" placeholder="Password" required>
+                    <!-- Ikon password -->
+                    <span class="input-icon">
+                      <i class="fa-solid fa-lock"></i>
+                    </span>
+                  </div>
 
+                  <!-- Link lupa password -->
+                  <div class="forget-password">
+                       <a href="#">Forget Your Password ?</a>
+                  </div>
+
+                  <!-- Tombol login -->
+                  <button type="submit" class="login-btn">LOGIN</button>
+              </form>
+              
+              <!-- ============================= -->
+              <!-- SOCIAL LOGIN SECTION          -->
+              <!-- ============================= -->
+              <div class="social-login">
+                  <!-- Teks info sosial login -->
+                  <p>log in with</p>
+                  
+                  <!-- Wrapper ikon sosial -->
+                  <div class="social-icons">
+                      <!-- Facebook -->
+                      <div class="social-icon facebook">F</div>
+                      <!-- Twitter -->
+                      <div class="social-icon twitter">X</div>
+                      <!-- Google -->
+                      <div class="social-icon google">G</div>
+                  </div>
+
+                  <!-- Link signup -->
+                  <div class="signup-link">
+                      <a href="#">Sign Up</a>
+                  </div>
+              </div> <!-- tutup social-login -->
+
+         </div> <!-- tutup login-box -->
+     </div> <!-- tutup container -->
 </body>
+<script src="script.js"></script>
 </html>
